@@ -1,17 +1,19 @@
-const express = require('express')
+import express, { json } from 'express'
+import { UserModel } from './models/postgresql/user.js'
+import { createUserRouter } from './routes/user.js'
+import { createLandingRouter } from './routes/landing.js'
 
 const app = express()
+app.use(json())
 
-const PORT = process.env.PORT ?? 1234
-
-app.get('/', (req, res) => {
-  res.send('<h1>XD</h1>')
-})
-
+app.use('/', createLandingRouter())
+app.use('/api/data', createUserRouter({ userModel: UserModel }))
 app.use((req, res) => {
   res.status(404).json({ message: 'Error 404' })
 })
 
+const PORT = process.env.PORT ?? 3000
+
 app.listen(PORT, () => {
-  console.log(`Server listening on port http://localhost:${PORT}`)
+  console.log(`Servidor corriendo en http://localhost:${PORT}`)
 })
