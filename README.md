@@ -87,7 +87,7 @@ curl http://localhost:3000/api/data
 - Asegúrate de que el frontend esté corriendo en `http://localhost:4200`.
 - Configura un servicio Angular que consuma el backend. Ejemplo de método en un servicio Angular:
 
-
+---
 
 ## **Docker (Opcional)**
 Si prefieres ejecutar el backend y PostgreSQL en contenedores Docker, consulta el archivo `docker-compose.yml` incluido en este repositorio.
@@ -103,8 +103,8 @@ Si prefieres ejecutar el backend y PostgreSQL en contenedores Docker, consulta e
 
 Si tienes alguna pregunta o necesitas asistencia adicional, no dudes en contactarme.
 
-- **Nombre**: [Cristian Stiven Guzman Tovar]
-- **Correo electrónico**: [cristiansgt089@gmail.com]
+- **Nombre**: Cristian Stiven Guzman Tovar
+- **Correo electrónico**: cristiansgt089@gmail.com
 - **GitHub**: [https://github.com/CristianGT089](https://github.com/CristianGT089)
 - **LinkedIn**: [https://www.linkedin.com/in/cristian-stiven-guzman-tovar-668655217/](https://www.linkedin.com/in/cristian-stiven-guzman-tovar-668655217/)
 
