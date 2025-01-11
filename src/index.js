@@ -2,9 +2,12 @@ import express, { json } from 'express'
 import { UserModel } from './models/postgresql/user.js'
 import { createUserRouter } from './routes/user.js'
 import { createLandingRouter } from './routes/landing.js'
+import { corsMiddleware } from './middlewares/cors.js'
 
 const app = express()
 app.use(json())
+app.use(corsMiddleware())
+app.disable('x-powered-by')
 
 app.use('/', createLandingRouter())
 app.use('/api/data', createUserRouter({ userModel: UserModel }))
