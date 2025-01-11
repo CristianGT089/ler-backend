@@ -16,7 +16,7 @@ Este proyecto es una aplicación web que consiste en un backend desarrollado con
 ### **1. Backend (Node.js + Express)**
 #### Clonar el repositorio:
 ```bash
-git clone <url-del-repositorio>
+git clone git@github.com:CristianGT089/ler-backend.git
 cd backend
 ```
 
